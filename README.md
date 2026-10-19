@@ -156,14 +156,13 @@ $$\mathcal{M}_{\text{IC}}(S_t) = \begin{cases}
 0 & \text{if } S_t \notin \Omega_{\text{safe}} \quad (\text{Trigger CCRP State Transition})
 \end{cases}$$
 
-### 3. Coherence Metric ($\\mathcal{C}$)
+### 3. Coherence Metric ($\mathcal{C}$)
 
-System coherence is quantified by calculating the cosine similarity between the current context activation vector $v_{\\text{current}}$ and the foundational directive vector $v_{\\text{anchor}}$:
+System coherence is quantified by calculating the cosine similarity between the current context activation vector $v_{\text{current}}$ and the foundational directive vector $v_{\text{anchor}}$:
 
-$$\\mathcal{C}(t) = \\frac{v_{\\text{current}} \\cdot v_{\\text{anchor}}}{\\v_{\\text{current}}\\ \\v_{\\text{anchor}}\\}$$
+$$\mathcal{C}(t) = \frac{v_{\text{current}} \cdot v_{\text{anchor}}}{\|v_{\text{current}}\| \|v_{\text{anchor}}\|}$$
 
-If $\\mathcal{C}(t) < \\tau_{\\text{threshold}}$, the system halts state advancement and enters the **Coherence Rebuild** phase.
-
+If $\mathcal{C}(t) < \tau_{\text{threshold}}$, the system halts state advancement and enters the **Coherence Rebuild** phase.
 ---
 
 ## Compliance vs. Reciprocal Alignment
